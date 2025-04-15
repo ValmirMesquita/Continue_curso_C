@@ -19,16 +19,27 @@
 /************** Função principal *************/
 int main() {
 
+    // viarios tipos de vetores de Sytings
     char str[] = "Valmir Mesquita";
     char *str1[] = {"V","A","L","M","I","R"};
+    char nome[100];
 
-    printf("Seu nome:%s \n",str);
-    printf("Tamanho dos caracteres:%d \n",sizeof(str));
+    printf("Digite um nome: ");
+    //scanf("%s \n",&nome);
+    gets(nome);// Imprime todo o nome completo
+
+    printf("Seu nome completo: %s\n", nome);
+    printf("Seu nome e: %s \n",str);
+    printf("Tamanho dos caracteres: %d \n",sizeof(str1));
+    printf("Tamanho dos caracteres: %d \n",sizeof(str));
+    printf("Tamanho dos caracteres: %d \n",sizeof(nome));
 
     for (int i = 0; i < 100; i++)
     {
         /* code */
-        printf("Seu nome:%s \n",str1[i]);
+        printf("Seu nome: %s \n",str1[i]);
+        //printf("Tamanho dos caracteres: %s \n",sizeof(str));
+       
     }
     
     
