@@ -18,6 +18,16 @@
 
 /************** Função principal *************/
 int main() {
+    int var=100;
+    int var1;
+
+    printf("Valor de inteoiro: %d\n",&var1);
+    printf("Valor de octa: %o\n",&var1);
+
+    for (int i = 0; i < var; i++)
+    {
+        printf("Valor de exadecimal: %X\n",&var);
+    }
     
 
     
