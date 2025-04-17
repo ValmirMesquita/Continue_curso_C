@@ -39,10 +39,6 @@ int main() {
     }
     printf("Resultado = %d\n",z);
     
-    
-
-
-    
     system ("PAUSE");
     return 0;
     
