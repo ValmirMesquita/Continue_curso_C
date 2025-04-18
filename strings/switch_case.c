@@ -42,7 +42,7 @@ int main() {
     system ("PAUSE");
     return 0;
     
-}/****************** End main **********************/
+}/*End main */
 
 /*********** Desenvolvimentos das Funcões ***********/ 
 int soma(int a, int b){return a + b;}
