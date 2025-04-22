@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <locale.h> 
+#include <time.h>
 
 /************* Prototipos das funcões **********/
 
@@ -18,31 +19,31 @@
 
 /************** Função principal *************/
 int main() {
+  int count;
+  int segun;
+  
+  printf("Digite um numero: ");
+  scanf("%d", &count);
 
-    int var;
-    int *ptr;                       /*Tipo de variavel (*ptr) como ponteiro*/
+  for (int i = 0; i < count; i++)
+  {
+    printf("%d : %d", i, count);
+    sleep(1);
+    system("cls");  
+  }
 
-    var = 5;
-    ptr = &var;                     /* forma correta de apontamento para uma vatiavel*/
-
-    
-    printf("Resultado: %d\n", &var);/* & Visualiza o endereço decimal da variavel */
-    printf("Resultado: %x\n", &var);/* & Visualiza o endereço exa decimal da variavel */
-    printf("Resultado do ponteiro: %x\n", ptr);/* ptr Visualiza o endereço da variavel ponteiro.*/
-    printf("Resultado do ponteiro: %x\n", &ptr);/* ptr Visualiza onde foi armazenado endereço da variavel ponteiro.*/
-    printf("Resultado do ponteiro: %x\n", *ptr);/* ptr Visualiza o conteudo da variavel.*/
-    printf("Resultado: %d\n", var);
-    printf("Resultado: %o\n", &var);/* & Visualiza o endereço octa da variavel */
-    printf("Resultado: %p\n", &var);/* & Visualiza o endereço no formato de memoria da minha maquina.*/
-
-    /*Valor do ponteiro atualizado*/
-    *ptr = 30;
-
-    printf("Valor do ponteiro atualizado: %d  \n", var);/* ptr Visualiza o conteudo da variavel.*/
-    
-   
-
-
+  if (count == 60)
+  {
+    for (int i = 0; i < segun; i++)
+      {
+        printf("%d : %d", i, i);
+        sleep(1);
+        system("cls");  
+      }
+  }
+  printf("----- FIM DA CONTAGEM ----- \n");
+  
+  
     system ("PAUSE");
     return 0;
     
