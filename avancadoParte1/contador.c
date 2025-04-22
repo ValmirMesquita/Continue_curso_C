@@ -19,7 +19,19 @@
 
 /************** Função principal *************/
 int main() {
+  int count;
   
+  printf("Digite um numero: ");
+  scanf("%d", &count);
+
+  for (int i = 0; i < count; i++)
+  {
+    for (int j = 0; j < count; j++){
+    printf("%d : %d", i, j);
+    sleep(1);
+    system("cls");
+    }
+  }
 
 
     system ("PAUSE");
