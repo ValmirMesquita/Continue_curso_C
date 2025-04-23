@@ -30,10 +30,12 @@ int main() {
     printf("%d : %d", i, j);
     sleep(1);
     system("cls");
+
+   
     }
   }
 
-
+    
     system ("PAUSE");
     return 0;
     
